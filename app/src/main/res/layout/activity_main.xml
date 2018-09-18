@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/android_main"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    android:background="@color/Color"
+    tools:context="com.example.rohit_pc.tipcalci.MainActivity">
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/tvBillAmount"
+    android:textColor="@color/colorWhite"
+    android:textAppearance="?android:attr/textAppearanceMedium"
+    android:text="@string/main.msg.billamount"/>
+
+
+    <EditText
+        android:layout_marginTop="14dp"
+        android:id="@+id/etBillAmount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/tvBillAmount"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:hint="@string/main.hint.billamount"
+        android:textColor="@color/colorWhite"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColorHint="@color/colorlight"
+        android:background="@android:color/transparent"
+        android:gravity="center"/>
+    <View
+        android:id="@+id/vRatingButton"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/etBillAmount"
+        android:layout_marginTop="20dp"
+        android:background="@color/colorlight"/>
+
+    <LinearLayout
+        android:id="@+id/ll1"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:orientation="horizontal"
+        android:layout_below="@+id/vRatingButton"
+        android:weightSum="3"
+        android:layout_marginTop="20dp"
+        >
+        <ImageButton
+            android:id="@+id/imageButton"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:backgroundTint="@color/Color"
+            app:srcCompat="@drawable/emoticon_sad" />
+
+        <ImageButton
+            android:id="@+id/imageButton1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:backgroundTint="@color/Color"
+            app:srcCompat="@drawable/emoticon_happy" />
+
+        <ImageButton
+            android:id="@+id/imageButton2"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:backgroundTint="@color/Color"
+            app:srcCompat="@drawable/emoticon" />
+
+    </LinearLayout>
+    <View
+        android:id="@+id/vimogi"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/ll1"
+        android:background="@color/colorlight"/>
+
+
+
+    <TextView
+        android:layout_marginTop="14dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/servicerating"
+        android:textColor="@color/colorWhite"
+        android:layout_below="@+id/ll1"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/main.msg.serviceration"
+        android:textAlignment="center"/>
+    <LinearLayout
+        android:id="@+id/ll2"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/servicerating"
+        android:layout_marginTop="15dp"
+        android:weightSum="2"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/tippercent"
+        android:textColor="@color/colorWhite"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textAlignment="center"
+            android:text="@string/main.msg.tipprcent"
+/>
+        <TextView
+            android:textAlignment="center"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/tippercent1"
+            android:textColor="@color/colorWhite"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/main.msg.tiptotal"
+            />
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/vtip"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/ll2"
+        android:layout_marginTop="20dp"
+        android:background="@color/colorlight"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ttbill"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/vtip"
+        android:textColor="@color/colorWhite"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/main.msg.billtotal"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/resultbill"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/ttbill"
+        android:textColor="@color/colorWhite"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/main.msg.billtataolresult"/>
+
+</RelativeLayout>

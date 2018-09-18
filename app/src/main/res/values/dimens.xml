@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="activity_horizontal_margin"></dimen>
+    <dimen name="activity_vertical_margin"></dimen>
+    <dimen name="activity_vertical_margin_big"></dimen>
+    <dimen name="activity_image_button"></dimen>
+</resources>
